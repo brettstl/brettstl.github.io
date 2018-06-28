@@ -1,0 +1,255 @@
+<HTML>
+<head>
+	<title>Data Viz</title>
+	<style>
+	p {
+		color: #283747;
+	}
+	h1 {
+		color: #d23ecd;
+		font-family: Gotham A,sans-serif;
+		text-transform: uppercase;
+	}
+</style>
+</head>
+<body>
+
+	<h1>Data Viz</h1>
+	<P>
+		Data Visualization has two main outcomes:
+		<ul>
+			<li> Looking at large datasets to explore trends, patterns, and exceptions to these trends and data (data exploration / exploratory data analysis)</li>
+			<li> Creating visualizations to communicate information found in data (explanatory data analysis)</li>
+		</ul>
+	</P>
+	<p>
+		This document is more focused on explanatory data analysis (communicating with data)
+	</p>
+	<p>
+		https://learnche.org/pid/data-visualization/index
+		https://www.lynda.com/Business-Intelligence-tutorials/Data-Visualization-Tips-Tricks/475454-2.html?srchtrk=index%3a5%0alinktypeid%3a2%0aq%3adata+visualization%0apage%3a1%0as%3arelevance%0asa%3atrue%0aproducttypeid%3a2
+	</p>
+	<h2>Storytelling with Data process</h2>
+
+	<ol>
+		<li> Understand the context: who is this for, what is the big idea, what is the 3 minute pitch? </li>
+		<li> Choose the appropriate visual display: line charts for continuous data, bar charts for categorical data.</li>
+		<li> Eliminate clutter: remove elements that don’t add value to the message. </li>
+		<li> Focus attention: use grays and light colors for less critical information, so the key information stands out. </li>
+		<li> Think like a designer: make your work ascetically pleasing and create visual hierarchy </li>
+		<li> Tell a story: intro, conflict, and resolution (Call to Action)</li>
+	</ol>
+	<p>
+		Horizontal Logic: the headlines of a presentation should tell the story
+		Vertical Logic: everything in a slide should build the argument for the headline
+	</p>
+	<p>
+		Why do most data graphics look bad?
+	</p>
+	<p>
+		The core problem is that you must know good principles of statistical graphics to create nice looking graphics using the most common tools available (like Excel) because the default settings don’t follow these principles. 
+	</p>
+	<blockquote>
+		“The purpose of default settings in a graphic tool is to make it easy to produce good graphics that accord with the principles of statistical graphics. If the defaults do not embody these principles, then the only way to produce good graphics is to be sufficiently familiar with the principles of statistical graphics. This paper shows that Excel graphics defaults do not embody the appropriate principles. Users who want to use Excel are advised to know the principles of good graphics well enough so that they can choose the appropriate options to override the defaults.” - https://www.sciencedirect.com/science/article/pii/S0167947308001631?via%3Dihub
+	</blockquote>
+	Quantitative Plots
+	Plots that show numbers.
+
+	Time-series plots
+	<p>
+		These are two-dimensional plot with a horizontal time axis or sequence order (x) and a vertical axis (Y) that is a numeric value of the data.
+	</p>
+	<p>
+		Our eye is good at dealing with high-density data (data with a high concentration of values) to pick up patters like sinusoids (waves), spikes, patters, and outliers. 
+	</P>
+	<h2>DATA COURSE With Alberto Cairo</h2>
+	<p>
+		https://journalismcourses.org/course/view.php?id=67
+		Knight Center at the University of Texas
+
+		“Convey your best understanding of what the truth is”
+
+		Each week you will need to do the following:
+	</p>
+	<ul>
+		<li> Watch videos</li>
+		<li> Complete readings</li>
+		<li> Complete exercise in forum</li>
+		<li> Quiz</li>
+		<li> Optional videos</li>
+	</ul>
+
+	Possible Data Sources
+	<ul>
+		<li> The United Nations</li>
+		<li> The world bank</li>
+		<li> AFL-CIO</li>
+		<li> Gapminder.org data (cleaned up data sets)</li>
+		<li> www.usa.gov/statistics</li>
+	</ul>
+	<h3>Week 1</h3>
+	<p>
+		Data Visualization is about tools and principles. A visualization is a representation designed to enable exploration, discover, or communication of data. It reveals insights in the data.
+
+		Hockey stick chart: a chart that shows extreme change in a line chart.
+
+		Any visualization is a model. A model is a simplified understanding of a system. It can be very accurate at predicting reality, but it is not reality, so something is always missing that would make it 100% accurate. (Aka all models are wrong, but some are useful). One of the most simple statically model is the mean (total values / n variables). This can be used to predict that future values should be close to the mean. But, the mean is not perfect. High variance can have a mean that does not depict the spread of the data very well. A 2d map of the world is also a model. It depicts the size of different countries, but the change from 3d to 2d creates distortion. Countries on the edges will look bigger than countries close to the center.
+
+		A visualization is a model that serves as a way to communicate a mental model in the designer’s brain and a mental model in the audience’s brain. 
+
+		As a viewer, we have to overcome 3 mind bugs
+	</p>
+	<ul>
+		<li> Patternicity: the ability to find patterns that may not be real. (We are much more likely to see correlation and causation that we should). Randomness rarely looks truly random to us (machine learning has been done to determine data was faked, because humans are bad at creating random data)</li>
+		<li> Storytelling: we look for a cause effect when we see patterns, even if the patterns are not real, or we are lacking key information. </li>
+		<li> Conformation: One we create a story, we are attracted to information that confirms our mental model of the world. It is like when you see your car everywhere after you buy it. The cars were always there, but now your brain is paying attention to them. Attacks on our mental model feel like personal attacks.</li>
+	</ul>
+	<p>
+		“The first principle is that you must not fool yourself—and you are the easiest person to fool.” Richard Feynman.1
+
+		Truth
+		Truth is not absolute nor is it relative, but our goal should be to move as close to absolute truth as possible. This is impossible, and it is doubly impossible with a model.
+
+		Getting closer to the truth often needs an anchor to help frame the model. 
+		“At the heart of quantitative reasoning is a single question: Compared to what?” - Edward Tufte
+
+		Elements
+
+		Framework: a container of the chart. Scales, legends, etc.
+		One or more visual encodings: This is the actual data on the graphic. Mapping numbers onto properties of objects.
+		Annotations: text that puts the data in context like a title, etc.
+
+		Identifying Encoding
+		What is the purpose of the visualization? An “ugly” chart may be useful if it is able to serve it’s purpose. 
+
+		For instance, if your audience needs to see every data point, they should get a table. If they need to see the change in data over a sequence, a line chart is better. 
+
+		Types of encoding
+		Encoding is a way to create a code to share information. Visual graphics generally use the following types of encoding:
+
+		Length, area, slope of line, color, angle, position, color saturation, divisions, texture, volume (3d), shape/icon, motion (generally time)
+
+		Most visualizations will use more than one kind of encoding in a graphic.
+	</p>
+	<h3>Core Principles </h3>
+	Simple put, a good data visualizations
+	1. Are based on good data
+	2. Attract your attention
+	3. Represent the data accurately
+	4. Show the right amount of data
+	<p>
+		Gestalt principals for data visualization
+		Proximity: object close together are perceived to be in a group
+		Similarity: similar objects are perceived to be in a group
+		Enclosure: object in an enclosure together are perceived to be in a group
+		Closure: objects are perceived to be closed when they can be interpreted as much
+		Continuity: objects are understood to continue as they have already behaved 
+		Connector: connected objects are perceived to be in a group
+
+		A preattentive visual property is one which is processed in spatial memory without our conscious action. 
+
+		Data Wrangler
+		Used to clean your data. 
+		When you transform the data, it is best to save the different versions with their format. So, you might have birthrate_wide and birthrate_tidy
+
+
+		Wide format:
+		This is a common format. Generally, your data is broken into different columns by year, but all of the data is the same kind. It is difficult to use for data visualization. This is really only useful for time series data. 
+
+		Long format (aka tidy format):
+		Each value will go into a row as an individual record like a database. 
+
+		To transform from wide to long you can do the following in Data Wrangler
+	</p>
+	<ol>
+		<li> make sure you only include columns you need</li>
+		<li> remove any commas</li>
+		<li> Save a copy of the data set as Modified</li>
+		<li> copy all of the data you want to move into the Data Wrangler tool</li>
+		<li> make sure to promote the first row, so it becomes the names of the columns</li>
+		<li> select all of the columns you want to fold from wide to long (like all of the values split into years)</li>
+		<li> fold all of these columns on the header</li>
+		<li> Click the export button</li>
+		<li> Copy the data and add to a new Excel workbook</li>
+		<li> Save as Tidy</li>
+	</ol>
+	<h3>Week 2</h3>
+	<p>
+		Data Exploration
+
+		You are looking for two things:
+		<ol>
+			<li> Trends and patterns in your data</li>
+			<li> Exceptions to these trends and patterns</li>
+		</ol>
+		<p>
+			Exceptions might be disregarded as outliers, but there is usually something interesting about these outliers.
+		</p><p>
+			Following up with people is usually a good idea to learn more about why trends and exceptions are happening. 
+		</p><p>
+			Inzight data visualization tool for quick exploration of data sets. 
+		</p><p>
+			The first option is for the x scale and it is great for histograms
+		</p><p>
+			When you run across an unexpected outcome to your data, it is good to save that visualization and mark it with what was unexpected in your notes.
+		</p><p>
+			To cast a variable as a string, you change to a “factor”
+		</p>
+		<h3>Week 3</h3>
+		<p>
+			Visualizations for communication
+			<p>
+				Choosing encodings
+				The first thing you want to do is determine what you want people to see. Like should they compare things, maybe a bar chart is best. If you want to show geographic trends, a map maybe better.
+			</p><p>
+				Hierarch of encoding based on accuracy. The more accuracy needed, make sure you are using graphics that use only encoding from the top and not the bottom like bar charts, lollipop charts, dot charts, scatter plot, line, and slope charts. 
+			</p><p>
+				When you want to show the big picture, the encoding methods near the bottom can be very useful to show data in ways that are not possible with the top encodings like maps.
+			</p>
+			<ul>
+				<li> Position on the same scale</li>
+				<li> Position on identical non-aligned scales</li>
+				<li> Length / height</li>
+				<li> Direction / slope</li>
+				<li> Angle</li>
+				<li> Area</li>
+				<li> Volume</li>
+				<li> Shading </li>
+				<li> Color</li>
+			</ul>
+			<p>
+				Design for understanding
+			</p><p>
+				When designing a visualization for communication, you need to focus on how the elements of the visualization are organized and how to declutter the design. Even when you have the correct encoding, you might not have a useful design.
+			</p><p>
+				When possible, you want to keep as much information in a single chart, so that you can tell your story comprehensively. But, that is not always possible, because you might make the chart too hard to read or understand. 
+			</p><p>
+				If you want to show the difference between two or more variables, it is best to plot the difference and not show the variables side-by-side. 
+			</p><p>
+				If you want to show each variable on a scale, it might be good to break them into small multiples, so you can see each in detail without clutter. 
+			</p>
+			<h2>References</h2>
+			<ul>
+				<li> Edward Tufte, Envisioning Information, Graphics Press, 1990. (10th printing in 2005)</li>
+				<li> Edward Tufte, The Visual Display of Quantitative Information, Graphics Press, 2001.</li>
+				<li> Edward Tufte, Visual Explanations: Images and Quantities, Evidence and Narrative, 2nd edition, Graphics Press, 1997.</li>
+				<li> Stephen Few, Show Me the Numbers and Now You See It: Simple Visualization Techniques for Quantitative Analysis; both from Analytics Press.</li>
+				<li> William Cleveland, Visualizing Data, 1st edition, Hobart Press, 1993.</li>
+				<li> William Cleveland, The Elements of Graphing Data, 2nd edition, Hobart Press, 1994.</li>
+				<li> Su, It’s Easy to Produce Chartjunk Using Microsoft Excel 2007 but Hard to Make Good Graphs, Computational Statistics and Data Analysis, 52 (10), 4594-4601, 2008.</li>
+			 </li>
+		</ul>
+		<h2>Resources</h2>
+		<ul>
+			<li> Gapminder.org data (cleaned up data sets)</li>
+			<li> iNZight</li>
+			<li> Datavizcatalogue.com</li>
+			<li> http://annkemery.com/essentials/</li>
+			<li> https://github.com/ft-interactive/chart-doctor/tree/master/visual-vocabulary</li>
+			<li> https://ft-interactive.github.io/visual-vocabulary/</li>
+			<li><a href="https://blog.datawrapper.de/choroplethmaps/">Using Maps</a></li>
+			<li><a href="https://learnche.org/pid/data-visualization/index">Learn Data Vis</a></li>
+		</ul>
+	</P>
+</body>
+</HTML>

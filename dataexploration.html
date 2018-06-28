@@ -3,91 +3,109 @@
 		<title>Exploritory Data Analysis</title>
 	</head>
 	<body>
-		Data Exploration Notes
-
+		<h1>Data Exploration Notes</h1>
+<p>
 According to Stephen Few, data analysis is modeling data so you can make sense of it. 
 
 Source: https://www.analyticsvidhya.com/blog/2016/01/guide-data-exploration/
-
-There are two main methodologies or techniques used to retrieve relevant data from large, unorganized pools. They are the manual and automatic methods. The manual method is another name for data exploration, while the automatic method is also known as data mining.
+</p>
+<p>
+There are two main methodologies or techniques used to retrieve relevant data from large, unorganized pools. They are the manual and automatic methods. </p>
+<p>The manual method is another name for data exploration, while the automatic method is also known as data mining.<p>
+<blockquote>
 Some people believe these terms are synonymous, while others see a technical difference between them. Data mining generally refers to gathering relevant data from large databases. Data exploration, on the other hand, generally refers to a data user being able to find his or her way through large amounts of data in order to gather necessary information. - https://www.techopedia.com/definition/28789/data-exploration
+</blockquote>
+<h2>Getting started</h2>
 
-Getting started
-
-Steps for data exploration
-1. Prepare data for exploration (ideally in a long format)
-2. Identify predictor and target variables
-3. Document assumptions you have about the data
-4. Document methods of collecting and cleaning the data
-5. Review data looking for trends, patterns, and exceptions to these trends and patterns
-6. Use univariate and bi-variate analysis techniques to explore the data
-7. Document interesting information you want to explore in detail
-
+<h3>Steps for data exploration</h3>
+<ol>
+<li> Prepare data for exploration (ideally in a long format)</li>
+<li> Identify predictor and target variables</li>
+<li> Document assumptions you have about the data</li>
+<li> Document methods of collecting and cleaning the data</li>
+<li> Review data looking for trends, patterns, and exceptions to these trends and patterns</li>
+<li> Use univariate and bi-variate analysis techniques to explore the data</li>
+<li> Document interesting information you want to explore in detail</li>
+</ol>
+<p>
 Date exploration happens after you collected and clean your data. It is best if you can clean the data as much as possible before you jump into exploration. 
-
+</p><p>
 Data exploration, cleaning and preparation can take up to 70% of your total project time.
-
-Cleaning your data
+</p>
+<h3>Cleaning your data</h3>
+<p>
 You can use some different tools including Excel, Data Wrangler, Trifacta, and Open Refine to clean your data. 
 
 Some common outputs of data needed for exploration:
+</p>
 
-
-Variable Identification 
+<h2>
+Variable Identification </h2>
+<p>
 First, identify Predictor (Input) and Target (output) variables. Next, identify the data type and category of the variables. 
 
 Example: Audience dimensions as predictors of phone calls
+</p>
+<table>
+	<tr>
+		<th>Type of Variables</th>			<th>Variable</th>					<th>Data Type</th>
+	</tr>			
+<tr><td>Target							<td>Unique Phone Call Event</td>		<td>Ordinal (dichotomous yes/no)</td></tr>	 
+<tr><td>Predictor</td>					<td>gender</td>							<td>Ordinal</td></tr>				 
+<tr><td>Predictor</td>					<td>new/return user type</td>			<td>Ordinal</td></tr>					 
+<tr><td>Predictor</td>					<td>Region (U.S. State</td>				<td>Nominal</td></tr> 						
+<tr><td>Predictor</td>					<td>Device Type (mobile, etc)</td>		<td>Nominal</td></tr>
+<tr><td>Predictor</td>					<td>Number of sessions</td>				<td>Ratio</td></tr>
+</table>
 
-Type of Variables			Variable					Data Type			
-Target					Unique Phone Call Event		Ordinal (dichotomous yes/no) 	 
-Predictor					gender					Ordinal						 
-Predictor					new/return user type		Ordinal						 
-Predictor					Region (U.S. State)			Nominal 						
-Predictor					Device Type (mobile, etc)	Nominal
-Predictor					Number of sessions		Ratio
 
-Univariate Analysis
+<h3>Univariate Analysis</h3>
+<p>
 Here we compare the variables one-by-one. The methods to perform uni-variate analysis will depend on whether the variable type is categorical or continuos. 
 
 Univariate analysis can also help identify missing and outlier values. 
 
-Continuous variables: You can focus on the central tendencies and spread of the data. 
-Central tendencies to look at: mean, median, mode
-Measure of dispersion: min, max, range, quartile, IQR, variance, standard deviation, skewness and kurtosis 
-Visualization methods: histogram, box plot
+<strong>Continuous variables</strong> : You can focus on the central tendencies and spread of the data. 
+<strong>Central tendencies to look at</strong>: mean, median, mode.
+<strong>Measure of dispersion</strong>: min, max, range, quartile, IQR, variance, standard deviation, skewness and kurtosis 
+<strong>Visualization methods</strong> : histogram, box plot
 
 Categorical Variables:  The primary way to get an understanding of this data is to use a frequency table to understand distribution fo each category. We can look at both the count and count % against each category. 
 Central tendencies to look at: mode
 Visualization methods: Bar Charts, stem and leaf, frequency table
-
-Bi-Variate Analysis
+</p>
+<h3>Bi-Variate Analysis</h3>
+<p>
 Bi-variate is about finding a relationship between two variables. How you analyze the data is based on the two data types.
-
-Continuous and Continuous: The best visualization is a scatter plot and it is great way to see negative, positive, curvilinear relationships (as well no relationships)
+</p>
+<p>
+<strong>Continuous and Continuous</strong>: The best visualization is a scatter plot and it is great way to see negative, positive, curvilinear relationships (as well no relationships)
 Correlation: calculate the R score to get an idea of the relationships
-
-Categorical and Categorical: A two way table allows you to analyze the data and can be used to create a chi-square test.
-Visualization methods: a stacked column is like a visual version of a two-way table. You can do both count based stacked columns or rate columns where they are all 100%.
-
-Categorical and Continuous: To look at the statistical significance we can perform Z-test, T-test or ANOVA.
+</p>
+<p>
+<strong>Categorical and Categorical</strong>: A two way table allows you to analyze the data and can be used to create a chi-square test.
+<strong>Visualization methods</strong>: a stacked column is like a visual version of a two-way table. You can do both count based stacked columns or rate columns where they are all 100%.
+</p><p>
+<strong>Categorical and Continuous</strong>: To look at the statistical significance we can perform Z-test, T-test or ANOVA.
 Visualization methods:  Box plot for each category. 
+</p>
+<h2>Tools</h2>
 
-Tools
-
-iNZight lite
-
+<h3>iNZight lite</h3>
+<p>
 Allows you to view univariate and by-variate date easily, and it can segment data into side-by-size graphs (small multiples) to easily see each segment individually. Great for exploring data. 
-
+</p><p>
 This Small multiples time-series example shows how life expectancy is dropping in most N. American nations, and can be used to further explore the nations with the biggest declines like Jamaica and Nicaragua.
+</p>
 
-￼
 
-
+<P>
 Other options
 https://www.analyticsvidhya.com/blog/2016/09/18-free-exploratory-data-analysis-tools-for-people-who-dont-code-so-well/
 
 Another source to explore: https://www.grad.ubc.ca/sites/default/files/doc/page/ct2016-10-18_handout.pdf
 
 A third:  https://learnche.org/pid/univariate-review/index
+</P>
 	</body>
 </HTML>
