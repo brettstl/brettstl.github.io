@@ -25,10 +25,6 @@
 	<p>
 		This document is more focused on explanatory data analysis (communicating with data)
 	</p>
-	<p>
-		https://learnche.org/pid/data-visualization/index
-		https://www.lynda.com/Business-Intelligence-tutorials/Data-Visualization-Tips-Tricks/475454-2.html?srchtrk=index%3a5%0alinktypeid%3a2%0aq%3adata+visualization%0apage%3a1%0as%3arelevance%0asa%3atrue%0aproducttypeid%3a2
-	</p>
 	<h2>Storytelling with Data process</h2>
 
 	<ol>
@@ -61,7 +57,7 @@
 	</p>
 	<p>
 		Our eye is good at dealing with high-density data (data with a high concentration of values) to pick up patters like sinusoids (waves), spikes, patters, and outliers. 
-	</P>
+	</p>
 	<h2>DATA COURSE With Alberto Cairo</h2>
 	<p>
 		https://journalismcourses.org/course/view.php?id=67
@@ -174,82 +170,146 @@
 		<li> Save as Tidy</li>
 	</ol>
 	<h3>Week 2</h3>
-	<p>
-		Data Exploration
+	<h4>Data Exploration</h4>
 
+	<p>
 		You are looking for two things:
-		<ol>
-			<li> Trends and patterns in your data</li>
-			<li> Exceptions to these trends and patterns</li>
-		</ol>
-		<p>
-			Exceptions might be disregarded as outliers, but there is usually something interesting about these outliers.
-		</p><p>
-			Following up with people is usually a good idea to learn more about why trends and exceptions are happening. 
-		</p><p>
-			Inzight data visualization tool for quick exploration of data sets. 
-		</p><p>
-			The first option is for the x scale and it is great for histograms
-		</p><p>
-			When you run across an unexpected outcome to your data, it is good to save that visualization and mark it with what was unexpected in your notes.
-		</p><p>
-			To cast a variable as a string, you change to a “factor”
-		</p>
-		<h3>Week 3</h3>
-		<p>
-			Visualizations for communication
-			<p>
-				Choosing encodings
-				The first thing you want to do is determine what you want people to see. Like should they compare things, maybe a bar chart is best. If you want to show geographic trends, a map maybe better.
-			</p><p>
-				Hierarch of encoding based on accuracy. The more accuracy needed, make sure you are using graphics that use only encoding from the top and not the bottom like bar charts, lollipop charts, dot charts, scatter plot, line, and slope charts. 
-			</p><p>
-				When you want to show the big picture, the encoding methods near the bottom can be very useful to show data in ways that are not possible with the top encodings like maps.
-			</p>
-			<ul>
-				<li> Position on the same scale</li>
-				<li> Position on identical non-aligned scales</li>
-				<li> Length / height</li>
-				<li> Direction / slope</li>
-				<li> Angle</li>
-				<li> Area</li>
-				<li> Volume</li>
-				<li> Shading </li>
-				<li> Color</li>
-			</ul>
-			<p>
-				Design for understanding
-			</p><p>
-				When designing a visualization for communication, you need to focus on how the elements of the visualization are organized and how to declutter the design. Even when you have the correct encoding, you might not have a useful design.
-			</p><p>
-				When possible, you want to keep as much information in a single chart, so that you can tell your story comprehensively. But, that is not always possible, because you might make the chart too hard to read or understand. 
-			</p><p>
-				If you want to show the difference between two or more variables, it is best to plot the difference and not show the variables side-by-side. 
-			</p><p>
-				If you want to show each variable on a scale, it might be good to break them into small multiples, so you can see each in detail without clutter. 
-			</p>
-			<h2>References</h2>
-			<ul>
-				<li> Edward Tufte, Envisioning Information, Graphics Press, 1990. (10th printing in 2005)</li>
-				<li> Edward Tufte, The Visual Display of Quantitative Information, Graphics Press, 2001.</li>
-				<li> Edward Tufte, Visual Explanations: Images and Quantities, Evidence and Narrative, 2nd edition, Graphics Press, 1997.</li>
-				<li> Stephen Few, Show Me the Numbers and Now You See It: Simple Visualization Techniques for Quantitative Analysis; both from Analytics Press.</li>
-				<li> William Cleveland, Visualizing Data, 1st edition, Hobart Press, 1993.</li>
-				<li> William Cleveland, The Elements of Graphing Data, 2nd edition, Hobart Press, 1994.</li>
-				<li> Su, It’s Easy to Produce Chartjunk Using Microsoft Excel 2007 but Hard to Make Good Graphs, Computational Statistics and Data Analysis, 52 (10), 4594-4601, 2008.</li>
-			 </li>
-		</ul>
-		<h2>Resources</h2>
-		<ul>
-			<li> Gapminder.org data (cleaned up data sets)</li>
-			<li> iNZight</li>
-			<li> Datavizcatalogue.com</li>
-			<li> http://annkemery.com/essentials/</li>
-			<li> https://github.com/ft-interactive/chart-doctor/tree/master/visual-vocabulary</li>
-			<li> https://ft-interactive.github.io/visual-vocabulary/</li>
-			<li><a href="https://blog.datawrapper.de/choroplethmaps/">Using Maps</a></li>
-			<li><a href="https://learnche.org/pid/data-visualization/index">Learn Data Vis</a></li>
-		</ul>
-	</P>
+	</p>
+	<ol>
+		<li> Trends and patterns in your data</li>
+		<li> Exceptions to these trends and patterns</li>
+	</ol>
+	<p>
+		Exceptions might be disregarded as outliers, but there is usually something interesting about these outliers.
+	</p><p>
+		Following up with people is usually a good idea to learn more about why trends and exceptions are happening. 
+	</p><p>
+		Inzight data visualization tool for quick exploration of data sets. 
+	</p><p>
+		The first option is for the x scale and it is great for histograms
+	</p><p>
+		When you run across an unexpected outcome to your data, it is good to save that visualization and mark it with what was unexpected in your notes.
+	</p><p>
+		To cast a variable as a string, you change to a “factor”
+	</p>
+	<h3>Week 3</h3>
+	<h4>
+		Visualizations for communication
+	</h4>
+	<p>
+		Choosing encodings
+		The first thing you want to do is determine what you want people to see. Like should they compare things, maybe a bar chart is best. If you want to show geographic trends, a map maybe better.
+	</p><p>
+		Hierarch of encoding based on accuracy. The more accuracy needed, make sure you are using graphics that use only encoding from the top and not the bottom like bar charts, lollipop charts, dot charts, scatter plot, line, and slope charts. 
+	</p><p>
+		When you want to show the big picture, the encoding methods near the bottom can be very useful to show data in ways that are not possible with the top encodings like maps.
+	</p>
+	<ul>
+		<li> Position on the same scale</li>
+		<li> Position on identical non-aligned scales</li>
+		<li> Length / height</li>
+		<li> Direction / slope</li>
+		<li> Angle</li>
+		<li> Area</li>
+		<li> Volume</li>
+		<li> Shading </li>
+		<li> Color</li>
+	</ul>
+	<h4>
+		Design for understanding
+	</h4>
+	<p>
+		When designing a visualization for communication, you need to focus on how the elements of the visualization are organized and how to declutter the design. Even when you have the correct encoding, you might not have a useful design.
+	</p>
+	<p>
+		When possible, you want to keep as much information in a single chart, so that you can tell your story comprehensively. But, that is not always possible, because you might make the chart too hard to read or understand. 
+	</p>
+	<p>
+		If you want to show the difference between two or more variables, it is best to plot the difference and not show the variables side-by-side. For a time series, you might show the difference in the two varaibles over time. 
+	</p>
+	<img src="truevaluesVSdifference.png" alt="difference" width="50%">
+	<p>
+		If you want to show each variable on a scale, it might be good to break them into small multiples, so you can see each in detail without clutter. 
+	</p>
+	<p>
+		Getting rid of clutter is about looking at every single element and decided if that element makes the visual easier to decode. Things like 3d effect are often bad when they add no informaiton, and actually make it harder to read. 
+	</p>
+	<p>
+		Girdlines are often too strong and draw too much attention to them, and they should be limited to only provide enough informaiton to understand key points. 
+	</p>
+	<h4>Words in visualizations</h4>
+	<p>Use a title that gives a clear understanding of what you are seeing in the encoding. The text and the data visualization should be seemless in their integration. </p>
+
+	<p>Example: The Washinton Post "Virginia's uneven recovery mirrors its growing politcal divide." </p>
+
+	<h3>Week 4</h3>
+	<p>Use good data. If you don't have domain specific knowledge you need to make sure you have a sense of what good data should look like.</p>
+
+	<h2>Dashboard Design</h2>
+	<p>If your data viz needs to roll up into a dashboard, you will want to create a coherent dashboard that helps the user explore the data in a logical way</p>
+	<h3><a href="https://supermetrics.com/blog/laws-ux-data-studio">Dashboard Design UX Rules</a></h3>
+	<ul>
+		<li><h4>Fitts Law</h4><p>The time to acquire a target is a fuctions of the distance to and the size fo the target. So, you want to put the most critical information in the first place a user will find it, and it should be large enough for them to find it in a page of information.</p></li>
+		<li><h4><a href="https://www.nngroup.com/articles/f-shaped-pattern-reading-web-content/">Reading Patterns</a></h4><p>It is best to assume that most new users are scanning the page and not consuming everything. Some of the most common ways users scan a page are using a Z shape, F shape, or E shaped scanning pattern. So, users will oftern start at the top left, and work their way down the page, generally scanning across the page if they feel like they are getting close to the information they need. To reducing scanning, do the  work for the users instead of forcing them to exert effort and take bad shortcuts. Prioritize and format text to direct users to what you want them to see, and to what you know they want to see. The most importaint content should be at the top. Use headings and sub-headings. Start headings with the most critical words. Group elements of related content together. <b>Bold</b> importaint words. Use Bullets and numbers for lists, and lists should be short. (5 items or less). Most importaint, you need to understand the motivations and goals of the users, so you can quickly get them to the information they need to know.</p></li>
+		<li><h4>Jakobs Law</h4><p>Users spend time on other interfaces, and prefer your interface ot work the same ways as all other interfaces they already know. Common practices include name in the top left, data range selector in the top right, filters and controls in the header.</p></li>
+		<li><h4>Law of Pragnanz</h4><p>People will preceive and interpret ambiguous or complex images as the simplest form possible, because it is the interpretation that requires the least cognitive effort for us. Most people are busy, and don't want to spend a lot of time thinking deeply about how to interpret the information they see. Encodings that are easy to interpret, with little ambiguoutigy will be the easyist to understand.</p></li>
+		<li><h4>Gestalt laws of grouping</h4><p>Humans naturall perceive objects as organized patters and objects. You can group in four ways; proximity, similartiy, focal point, and common region.</p></li>
+		<li><h4>Millers Law</h4><p>The average person can only keep 7 items in their working memory. You don't want to overwhelm users with too much to take in on a single page. It is also been found that users will scroll right away on a long dashbaord likely skipping key content.</p></li>
+		<li><h4>Serial Position Effect</h4><p>Users best remember the first ans last items in a list. Make sure your key info in the top and bottom of your dashboard.</p></li>
+	</ul>
+
+	<h2>Books</h2>
+	<ul>
+		<li> Edward Tufte, Envisioning Information, Graphics Press, 1990. (10th printing in 2005)</li>
+		<li> Edward Tufte, The Visual Display of Quantitative Information, Graphics Press, 2001.</li>
+		<li> Edward Tufte, Visual Explanations: Images and Quantities, Evidence and Narrative, 2nd edition, Graphics Press, 1997.</li>
+		<li> Stephen Few, Show Me the Numbers and Now You See It: Simple Visualization Techniques for Quantitative Analysis; both from Analytics Press.</li>
+		<li> William Cleveland, Visualizing Data, 1st edition, Hobart Press, 1993.</li>
+		<li> William Cleveland, The Elements of Graphing Data, 2nd edition, Hobart Press, 1994.</li>
+		<li> Su, It’s Easy to Produce Chartjunk Using Microsoft Excel 2007 but Hard to Make Good Graphs, Computational Statistics and Data Analysis, 52 (10), 4594-4601, 2008.</li>
+		<li>Andy Kirk, Data Visualization</li>
+		<li>Alberto Cairo, The Trutheful Art</li>
+		<li>Charles Wheelan, Naked Statistics</li>
+		<li>Jordan Ellenberg, How not to be wrong</li>
+		<li>Statistics Unplugged</li>
+		<li>How to Lie with Maps</li>
+		<li>Thematic Cartography and Geovisualization</li>
+		<li>How Maps Work</li>
+		<li>The Grammar of Graphics</li>
+		<li><a href="https://www.amazon.com/Information-Visualization-Third-Interactive-Technologies/dp/0123814642/ref=sr_1_1?ie=UTF8&qid=1530935950&sr=8-1&keywords=information+visualization">Information Visualization</a></li>
+		<li>The Wall Street Journal Guide to Information Graphics</li>
+		<li>Malofiej</li>
+		<li>The Book of Trees</li>
+		<li>Dear Data</li>
+		<li>Interactive Data Visuzlizations for the Web</li>
+		<li>D3.js in Action</li>
+	</ul>
+	<h2>Leaders in data and data viz</h2>
+	<ul>
+		<li><h3>Hans Rosling</h3><p>He was the Professor of International Health at Karolinska Institute[4] and was the co-founder and chairman of the Gapminder Foundation, which developed the Trendalyzer software system. </p></li>
+		<li></li>
+	</ul> 
+	<h2>Resources</h2>
+	<ul>
+		<li><a href="https://excelcharts.com/"></a>Excel Charts</li>
+		<li> Gapminder.org data (cleaned up data sets)</li>
+		<li> <a href="https://datavizcatalogue.com/">Datavizcatalogue.com</a></li>
+		<li><a href=" http://annkemery.com/essentials/">Ann Emery essentail charts</a></li>
+		<li> <a href="https://github.com/ft-interactive/chart-doctor/tree/master/visual-vocabulary">Finacial Times PDF Chart Picker</a></li>
+		<li><a href="https://blog.datawrapper.de/choroplethmaps/">Using Maps</a></li>
+		<li><a href="https://learnche.org/pid/data-visualization/index">Learn Data Vis</a></li>
+		<li><a href="https://www.lynda.com/Business-Intelligence-tutorials/Data-Visualization-Tips-Tricks/475454-2.html?srchtrk=index%3a5%0alinktypeid%3a2%0aq%3adata+visualization%0apage%3a1%0as%3arelevance%0asa%3atrue%0aproducttypeid%3a2">Linda Course on data viz</a></li>
+		<li><a href="https://colorhunt.co/">Color Hunter</a>: tool to find nice looking color sets</li>
+		<li> <a href="https://ft-interactive.github.io/visual-vocabulary/">Financial Times Interactive Chart Picker</a></li>
+		<li><a href="http://www.visualisingdata.com/resources/">Visualizing Data Resources</a></li>
+		<li><a href="http://www.thefunctionalart.com/p/instructors-guide.html">Guide on tools and knowledge for doing data viz</a></li>
+	</ul>
+	<h2>Viz Tools</h2>
+	<ul>
+		<li><a href="https://flourish.studio/">Flourish</a>: story based visualization tool. (free and paid versions)</li>
+		<li><a href="https://pudding.cool/process/flexbox-layout/">D3</a>: javascript visualization tool</li>
+		<li> <a href="https://www.stat.auckland.ac.nz/~wild/iNZight/">iNZight</a>: data exploration tool</li>
+	</ul>
+</P>
 </body>
 </HTML>
