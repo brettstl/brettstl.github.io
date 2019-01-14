@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<script type="text/javascript">
+d3.csv("cities.csv").then(function(data) {
+  data.forEach(function(d) {
+    d.population = +d.population;
+    d["land area"] = +d["land area"];
+  });
+  console.log(data[0]);
+});
+</script>
+</body>
+</html>
